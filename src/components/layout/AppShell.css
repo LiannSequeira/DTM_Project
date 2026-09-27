@@ -1,0 +1,72 @@
+.app-shell {
+  display: flex;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.app-content {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.app-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.app-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.app-content::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.app-content::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Desktop layout */
+@media (min-width: 1025px) {
+  .app-shell {
+    flex-direction: row;
+  }
+
+  .app-main {
+    flex-direction: column;
+  }
+}
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+  .app-shell {
+    flex-direction: column;
+  }
+
+  .app-main {
+    height: calc(100vh - 4rem);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .app-shell {
+    height: 100vh;
+  }
+
+  .app-main {
+    height: calc(100vh - 3.5rem - 4rem);
+  }
+
+  .app-content {
+    padding-bottom: 1rem;
+  }
+}

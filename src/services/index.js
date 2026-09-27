@@ -1,0 +1,6 @@
+export { default as chatService } from './chatService'
+export { default as resourcesService } from './resourcesService'
+export { default as cgpaService } from './cgpaService'
+export { default as clubsService } from './clubsService'
+export { default as feedbackService } from './feedbackService'
+export { default as profileService } from './profileService'

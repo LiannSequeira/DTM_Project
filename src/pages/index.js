@@ -1,0 +1,7 @@
+export { default as Home } from './Home'
+export { default as Chat } from './Chat'
+export { default as Resources } from './Resources'
+export { default as CGPA } from './CGPA'
+export { default as Clubs } from './Clubs'
+export { default as Feedback } from './Feedback'
+export { default as Profile } from './Profile'

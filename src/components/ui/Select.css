@@ -1,0 +1,77 @@
+.select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.select-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  appearance: none;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  padding-right: 2.5rem;
+  font-size: 0.95rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.select:disabled {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.select-error {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.select-error .select {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.select-error .select:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.select-chevron {
+  position: absolute;
+  right: 1rem;
+  color: #6b7280;
+  pointer-events: none;
+}
+
+.select-error-message {
+  font-size: 0.875rem;
+  color: #dc2626;
+}
+
+@media (max-width: 640px) {
+  .select {
+    font-size: 1rem;
+    padding: 0.875rem 1rem;
+    padding-right: 2.75rem;
+  }
+
+  .select-chevron {
+    right: 0.875rem;
+  }
+}

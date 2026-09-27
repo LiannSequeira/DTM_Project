@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Campus Companion Backend",
+			"type": "shell",
+			"command": "cd /d \"D:\\DTM Project\\DTM_Project\\backend\" && npm run dev",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
